@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViewMap">
+
+    <LinearLayout
+        android:layout_width="344dp"
+        android:layout_height="670dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <fragment
+            android:id="@+id/viewFragmentMap"
+            android:name="com.tracking.tas2.FragmentMap"
+            android:layout_width="match_parent"
+            android:layout_height="315dp"
+            tools:layout="@layout/fragment_map" />
+
+    <fragment
+        android:id="@+id/viewFragmentData"
+        android:name="com.tracking.tas2.FragmentData"
+        tools:layout="@layout/fragment_data"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
